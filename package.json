@@ -1,0 +1,32 @@
+{
+  "name": "git-twitch",
+  "version": "0.1.0",
+  "description": "this is a webhook for github and twitch interaction",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "start:watch": "nodemon --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdougie/git-twitch.git"
+  },
+  "author": "bdougie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdougie/git-twitch/issues"
+  },
+  "homepage": "https://github.com/bdougie/git-twitch#readme",
+  "dependencies": {
+    "@octokit/webhooks": "^7.11.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "http": "0.0.1-security",
+    "octokit": "^1.5.0",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
