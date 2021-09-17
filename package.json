@@ -4,7 +4,7 @@
   "description": "this is a webhook for maintainer team invites",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node index.js",
     "start:watch": "nodemon --watch index.js"
   },
   "repository": {
