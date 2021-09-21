@@ -111,7 +111,7 @@ async function checkForEmployee(user) {
 async function addUserToTeam(user, team, employeeStatus) {
   const team_slug = employeeStatus ? 'github-employees' : 'members';
   const {status} = await octokit.request('PUT /orgs/{org}/teams/{team_slug}/memberships/{username}', {
-    org: 'github',
+    org: 'maintainers',
     team_slug: team_slug,
     username: user,
     role: 'member'
